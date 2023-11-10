@@ -470,7 +470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38784c99bf3c48cc9ca1f98d5e02ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   cam: {fileID: 963194227}
   bulletPrefab: {fileID: 1246190712}
 --- !u!1 &524810276
@@ -1098,9 +1097,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8378572348619053696, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.065
+      value: -1.122
       objectReference: {fileID: 0}
     - target: {fileID: 8378572348619053696, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
       propertyPath: m_LocalPosition.y
