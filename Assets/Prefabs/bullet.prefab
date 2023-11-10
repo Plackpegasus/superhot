@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6405440112371116716}
   - component: {fileID: 9094414247402017166}
   - component: {fileID: 2139515710494863715}
-  - component: {fileID: 6837892258279862983}
+  - component: {fileID: 3802388767928013751}
+  - component: {fileID: 5862222382326644421}
   - component: {fileID: 7754537948408145387}
   m_Layer: 0
   m_Name: bullet
@@ -101,13 +102,40 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6837892258279862983
+--- !u!54 &3802388767928013751
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500277872320870544}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5862222382326644421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846bbe29c84204506b711a5a9a4cb20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  bulletSpeed: 4
 --- !u!96 &7754537948408145387
 TrailRenderer:
   serializedVersion: 3
