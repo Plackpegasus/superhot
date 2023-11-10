@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBehaviour : MonoBehaviour
+public class BulletSpawner : MonoBehaviour
 {
     public Camera cam;
     public GameObject bulletPrefab;
@@ -16,6 +16,8 @@ public class BulletBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 spawnPosition = cam.transform.position + cam.transform.forward;
