@@ -254,14 +254,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f785b8376ce4324681eb5db0e59c6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 963194227}
   walkSpeed: 6
   runSpeed: 12
   jumpPower: 7
   gravity: 20
+  canMove: 1
+  playerCamera: {fileID: 963194227}
   lookSpeed: 2
   lookYLimit: 45
-  canMove: 1
 --- !u!143 &263488027
 CharacterController:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38784c99bf3c48cc9ca1f98d5e02ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 963194227}
+  spawnPoint: {fileID: 963194228}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
   gunCooldown: 2
 --- !u!1 &385443817
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 1646419911}
   - component: {fileID: 1646419912}
   m_Layer: 0
-  m_Name: TimeManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

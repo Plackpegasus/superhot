@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public Camera cam;
+    public Transform spawnPoint;
     public GameObject bulletPrefab;
 
     [SerializeField]
@@ -22,8 +22,8 @@ public class BulletSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && Time.time > passedCooldownTime)
         {
-            Vector3 spawnPosition = cam.transform.position + cam.transform.forward;
-            Instantiate(bulletPrefab, spawnPosition, cam.transform.rotation);
+            Vector3 spawnPosition = spawnPoint.position + spawnPoint.forward;
+            Instantiate(bulletPrefab, spawnPosition, spawnPoint.rotation);
 
             passedCooldownTime = Time.time + gunCooldown;
         }

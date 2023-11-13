@@ -5,20 +5,21 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    public Camera playerCamera;
+    [Header("Player Movement Variables")]
     public float walkSpeed = 6f;
-    public float runSpeed = 12f;
     public float jumpPower = 7f;
     public float gravity = 20f; // Increased gravity for more "realistic" jump
-
+    public bool canMove = true;
+    [Header("Player View Variables")]
+    public Camera playerCamera;
     public float lookSpeed = 2f;
     public float lookYLimit = 45f;
 
     Vector3 moveDirection = Vector3.zero;
-    float rotationX = 0;
-    public bool canMove = true;
-
+    float viewRotation = 0;
     CharacterController characterController;
+
+    public bool isPlayerDead { get; private set; } = false;
 
     void Start()
     {
@@ -31,8 +32,8 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
-        float curSpeedX = canMove ? (Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
+        float curSpeedX = canMove ? walkSpeed * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = canMove ? walkSpeed * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
@@ -53,12 +54,21 @@ public class PlayerController : MonoBehaviour
         // Player and Camera rotation
         if (canMove)
         {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotationX = Mathf.Clamp(rotationX, -lookYLimit, lookYLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            viewRotation += -Input.GetAxis("Mouse Y") * lookSpeed;
+            viewRotation = Mathf.Clamp(viewRotation, -lookYLimit, lookYLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(viewRotation, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bullet")
+        {
+            isPlayerDead = true;
+            Debug.LogError("Game Over: Player has been hit");
+        }
     }
 }

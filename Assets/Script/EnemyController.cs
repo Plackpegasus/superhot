@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    // TODO implementation
 
     public float speed = 1f;
 
-    // testing variables
     private bool up = true;
     private Vector3 startingPos;
 
