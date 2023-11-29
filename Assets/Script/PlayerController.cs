@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Bullet")
         {
             isPlayerDead = true;
-            Debug.LogError("Game Over: Player has been hit");
+            Debug.LogWarning("Game Over: Player has been hit");
         }
     }
 }
