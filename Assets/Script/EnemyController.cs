@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
     public float speed = 1f;
+    [SerializeField]
+    private bool movingEnemy = false;
 
     private bool up = true;
     private Vector3 startingPos;
@@ -24,19 +24,12 @@ public class EnemyController : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(directionToCamera);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
 
-        // The movement code is commented out
-        /*
-        if (up)
-        {
-            transform.position += Vector3.forward * Time.deltaTime * speed;
+        // simple line movement
+        if (movingEnemy) {
+            if (up) { transform.position += Vector3.forward * Time.deltaTime * speed; }
+            else { transform.position += Vector3.back * Time.deltaTime * speed; }
+            if (transform.position.z >= startingPos.z + 5f || transform.position.z <= startingPos.z - 1f) up = !up;
         }
-        else
-        {
-            transform.position += Vector3.back * Time.deltaTime * speed;
-        }
-
-        if (transform.position.z >= startingPos.z + 5f || transform.position.z <= startingPos.z - 1f) up = !up;
-        */
     }
 
     private void OnTriggerEnter(Collider other)
