@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 2929724804876366135}
   - component: {fileID: 5732979185805137277}
   - component: {fileID: 654449006678449723}
+  - component: {fileID: 8264831533469498771}
+  - component: {fileID: 2904797221004362345}
+  - component: {fileID: 4645106468049412032}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -64,6 +67,69 @@ MonoBehaviour:
   spawnPoint: {fileID: 4631410785938267582}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
   gunCooldown: 3
+--- !u!65 &8264831533469498771
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405229365419864894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5981029, y: 1.833245, z: 0.5675111}
+  m_Center: {x: 0.11100483, y: 0.9072913, z: 0.16367841}
+--- !u!65 &2904797221004362345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405229365419864894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12418449, y: 0.1055665, z: 0.5366583}
+  m_Center: {x: 0.28293067, y: 1.3723714, z: 0.7247515}
+--- !u!65 &4645106468049412032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405229365419864894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.24185482, y: 0.16215193, z: 0.5366583}
+  m_Center: {x: 0.09883517, y: 1.3440788, z: 0.7247515}
 --- !u!1 &7916387036723583103
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +229,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2773590199028469315, guid: 815533d1e1c3f4985aca2e22940f9eff, type: 3}
+    - {fileID: 5742194073794025328, guid: 815533d1e1c3f4985aca2e22940f9eff, type: 3}
+    - {fileID: 7362243326656735392, guid: 815533d1e1c3f4985aca2e22940f9eff, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
