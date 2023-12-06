@@ -4,8 +4,8 @@ public class BulletSpawnerEnemy : BulletSpawner
 {
     void Start() 
     {
-        // enemy should not start to shooting straight away
-        passedCooldownTime = Time.time + gunCooldown;
+        // enemies should not start to shoot straight away & all at once
+        passedCooldownTime = Time.time + Random.Range(gunCooldown, gunCooldown * 2);
     }
 
     // Update is called once per frame
