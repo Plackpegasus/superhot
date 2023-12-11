@@ -12,8 +12,6 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(uiController.isGamePaused);
-
         if (uiController.isGamePaused)
         {
             Time.timeScale = 0f;
