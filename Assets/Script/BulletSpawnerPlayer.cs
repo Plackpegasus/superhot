@@ -4,12 +4,12 @@ using UnityEngine.UI;
 public class BulletSpawnerPlayer : BulletSpawner
 {
     public Image crosshair;
-    private float crosshairRotation = 90f;
+    private float targetCrosshairRotation = -90f;
 
     // Start is called before the first frame update
     void Start()
     {
-        crosshairRotation = crosshairRotation / gunCooldown;
+        targetCrosshairRotation = targetCrosshairRotation / gunCooldown;
     }
 
     // Update is called once per frame
@@ -20,9 +20,12 @@ public class BulletSpawnerPlayer : BulletSpawner
             Vector3 bulletSpawnPosition = bulletSpawnPoint.position;
             bulletSpawnPosition += bulletSpawnPoint.forward; // offset bullet from camera, so playermodel is not hit
             spawnBullet(bulletSpawnPosition, bulletSpawnPoint.rotation);
+        }
 
-            // TODO: gun crosshair spin
-            // crosshair.rectTransform.rotation += Quaternion.Euler(new Vector3(0,0,crosshairRotation));
+        if (Time.time < passedCooldownTime)
+        {
+            float newCrosshairRotation = crosshair.transform.rotation.z + (targetCrosshairRotation * Time.time);
+            crosshair.transform.rotation = Quaternion.Euler(0, 0, newCrosshairRotation);
         }
     }
 }
