@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  movingEnemy: 0
 --- !u!65 &7362243326656735392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  movingEnemy: 0
 --- !u!4 &7849845949909209703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4969224816726227144, guid: 3859c298a562c40699bc4d86026bc0ae, type: 3}
@@ -180,15 +182,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552524393289422110, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00017327766
+      value: -0.000183
       objectReference: {fileID: 0}
     - target: {fileID: 2552524393289422110, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00087391585
+      value: 0.000844
       objectReference: {fileID: 0}
     - target: {fileID: 2552524393289422110, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00034351836
+      value: 0.000365
       objectReference: {fileID: 0}
     - target: {fileID: 2552524393289422110, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_LocalRotation.w
