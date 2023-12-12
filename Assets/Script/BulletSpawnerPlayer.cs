@@ -17,7 +17,9 @@ public class BulletSpawnerPlayer : BulletSpawner
     {
         if (Input.GetMouseButtonDown(0))
         {
-            spawnBullet();
+            Vector3 bulletSpawnPosition = bulletSpawnPoint.position;
+            bulletSpawnPosition += bulletSpawnPoint.forward; // offset bullet from camera, so playermodel is not hit
+            spawnBullet(bulletSpawnPosition, bulletSpawnPoint.rotation);
 
             // TODO: gun crosshair spin
             // crosshair.rectTransform.rotation += Quaternion.Euler(new Vector3(0,0,crosshairRotation));

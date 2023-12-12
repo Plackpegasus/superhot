@@ -2,19 +2,17 @@ using UnityEngine;
 
 public abstract class BulletSpawner : MonoBehaviour
 {
-    public Transform spawnPoint;
+    public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
 
     [SerializeField]
     protected float gunCooldown = 3f;
     protected float passedCooldownTime;
 
-    protected void spawnBullet() {
+    protected void spawnBullet(Vector3 spawnPosition, Quaternion spawnRotation) {
         if (Time.time > passedCooldownTime) 
         {
-            Vector3 spawnPosition = spawnPoint.position + spawnPoint.forward;
-            Instantiate(bulletPrefab, spawnPosition, spawnPoint.rotation);
-
+            Instantiate(bulletPrefab, spawnPosition, spawnRotation);
             passedCooldownTime = Time.time + gunCooldown;
         }
     }

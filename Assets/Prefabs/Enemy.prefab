@@ -64,9 +64,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025999d80d8362348a8ad3131ec12468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 4631410785938267582}
+  bulletSpawnPoint: {fileID: 4631410785938267582}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
-  gunCooldown: 3
+  gunCooldown: 1
 --- !u!65 &8264831533469498771
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 7916387036723583103}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.258, y: 1.412, z: 0.981}
+  m_LocalPosition: {x: 0.258, y: 1.412, z: 1.1223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
