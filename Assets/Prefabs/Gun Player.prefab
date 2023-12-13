@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 555946554368245024, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_Name
-      value: Gun Variant
+      value: Gun Player
       objectReference: {fileID: 0}
     - target: {fileID: 2552524393289422110, guid: 1299311010074934298d71151cea490e, type: 3}
       propertyPath: m_LocalScale.x

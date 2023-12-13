@@ -66,6 +66,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPoint: {fileID: 4631410785938267582}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
+  muzzleFlash: {fileID: 9165965638146717524}
   gunCooldown: 1
 --- !u!65 &8264831533469498771
 BoxCollider:
@@ -240,5 +241,10 @@ PrefabInstance:
 --- !u!4 &8636540707216975046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3426328460926668100, guid: 815533d1e1c3f4985aca2e22940f9eff, type: 3}
+  m_PrefabInstance: {fileID: 6365815632629737858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9165965638146717524 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2838365868619849430, guid: 815533d1e1c3f4985aca2e22940f9eff, type: 3}
   m_PrefabInstance: {fileID: 6365815632629737858}
   m_PrefabAsset: {fileID: 0}
