@@ -9,7 +9,7 @@ public class BulletSpawnerPlayer : BulletSpawner
     // Start is called before the first frame update
     void Start()
     {
-        targetCrosshairRotation = targetCrosshairRotation / gunCooldown;
+        targetCrosshairRotation = targetCrosshairRotation / GunCooldown;
     }
 
     // Update is called once per frame

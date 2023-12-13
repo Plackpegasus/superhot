@@ -9,7 +9,7 @@ public class BulletSpawnerEnemy : BulletSpawner
         player = GameObject.FindWithTag("Player");
 
         // enemies should not start to shoot straight away & all at once
-        passedCooldownTime = Time.time + Random.Range(gunCooldown, gunCooldown * 2);
+        passedCooldownTime = Time.time + Random.Range(GunCooldown, GunCooldown * 2);
     }
 
     // Update is called once per frame

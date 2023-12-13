@@ -6,7 +6,9 @@ public abstract class BulletSpawner : MonoBehaviour
     public GameObject bulletPrefab;
 
     [SerializeField]
-    protected float gunCooldown = 3f;
+    private float gunCooldown = 3f;
+
+    public float GunCooldown { get { return gunCooldown; } protected set { gunCooldown = value; } }
     protected float passedCooldownTime;
 
     protected void spawnBullet(Vector3 spawnPosition, Quaternion spawnRotation) {
