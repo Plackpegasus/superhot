@@ -954,6 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPoint: {fileID: 963194228}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
+  muzzleFlash: {fileID: 1032372392}
   gunCooldown: 1
   crosshair: {fileID: 51183590}
 --- !u!1 &275834040
@@ -2088,6 +2089,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 20.984, z: -90}
+--- !u!198 &1032372392 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1665204560673318618, guid: 1299311010074934298d71151cea490e, type: 3}
+  m_PrefabInstance: {fileID: 3819100942976867008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1053443901
 GameObject:
   m_ObjectHideFlags: 0
