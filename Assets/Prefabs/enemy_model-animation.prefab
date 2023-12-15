@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65ce56ecac929448a6cdd3661cd1e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 0}
   speed: 4
   movingEnemy: 0
 --- !u!65 &7362243326656735392
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65ce56ecac929448a6cdd3661cd1e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 892696601220794196, guid: 1d329aecd4aa34b42b5f1b5a46fe0ad8, type: 3}
   speed: 4
   movingEnemy: 0
 --- !u!4 &7849845949909209703 stripped

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+
+    public ParticleSystem deathParticles;
     public float speed = 1f;
     [SerializeField]
     private bool movingEnemy = false;
@@ -25,7 +27,8 @@ public class EnemyController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
 
         // simple line movement
-        if (movingEnemy) {
+        if (movingEnemy)
+        {
             if (up) { transform.position += Vector3.forward * Time.deltaTime * speed; }
             else { transform.position += Vector3.back * Time.deltaTime * speed; }
             if (transform.position.z >= startingPos.z + 5f || transform.position.z <= startingPos.z - 1f) up = !up;
@@ -36,6 +39,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
+            Instantiate(deathParticles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
