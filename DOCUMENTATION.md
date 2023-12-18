@@ -13,10 +13,10 @@ Als Fans des Shooters haben Nico und ich uns entschieden, innerhalb des Moduls �
 Unsere Umsetzung von Superhot übernimmt die gängigsten Steuerelemente eines First-Person Shooters.
 Die Steuerungsmechaniken sind wie folgt:
 
-– Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.  
-– Leertaste: Hüpfen  
-– Linke Maustaste: Schuss mit Waffe  
-– Taste «R»: Neustarten des Levels
+- Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.
+- Leertaste: Hüpfen
+- Linke Maustaste: Schuss mit Waffe
+- Taste «R»: Neustarten des Levels
 
 ## 3rd Party Assets
 
@@ -46,8 +46,7 @@ Unserer Adaption von Superhot verwendet zwei Audioquellen von externen Quellen:
 
 ### Functional Requirements
 
-Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft
-
+- Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft
 - Basic-Playercontroller: Spieler kann Laufen und Hüpfen
 - Mind. ein Spiellevel
 - Mind. drei Gegner im Level zum Bekämpfen
@@ -65,7 +64,33 @@ Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft
 
 ## Playtesting
 
-...
+Das Playtesting haben wir während der Entwicklunsgzeit am Mittwoch, 6. Dezember 2023 an der HSLU durchgeführt. Getestet wurde mit ingesamt sieben Personen, mit unterschiedlichen Gaming-Vorerfahrungen und Geschlechtern. Uns war es wichtig, dass Playtesting mit genug Abstand zum Abgabetermin umzusetzen, um bei Erkenntnissen entsprechend reagieren zu können.
+
+Zum Termind es Playtestings waren die Grundlagen von Superhot implementiert. Es fehlten noch sämtliche Sounds und Animationen.
+
+### Playtesting-Setup
+
+Für das Playtesting haben wir ein frühes Playtesting-Level konzipiert, dass den Testpersonen gezeigt wurde. In diesem Playtesting-Level war es den Spielern möglich, alle implementierten Features zu nutzen. Während und im Anschluss des Testings wurde, die Testpersonen mit einem vorher definierten Fragebogen abgefragt. Alle Antworten wurden im Anschluss in einem Google Form gesammelt.
+
+Der Fragebogen umfasste folgende Fragen:
+
+- Wie ist dein Vorname?
+- Welches Alter hat die Testperson?
+- Wie häufig spielst du Games (Nie / Selten / Manchmal / Häufig )
+- Was ist die Hauptmechanik dieses Spiels? (freie Antwort)
+- Wie merkst du, dass du einen Gegner getroffen hast? (freie Antwort)
+- Was war der frustrierendste Moment/Aspekt, den du gerade erlebt hast während dem Spiel? (freie Antwort)
+- Wie viel Spass macht dir das Spiel aktuell von 1 - 10? (Antwortskala von 1 bis und mit 10)
+- Wie einfach findest das Spiel zu spielen und zu verstehen? (Antwortskala von 1 bis und mit 10)
+- Was denkst du, könnte den Spass noch erhöhen? (freie Antwort)
+- War da irgendetwas, was du gerne machen wolltest, aber nicht konntest? (freie Antwort)
+
+### Playtesting Ergebnis
+
+... (Ergebnisse hier)
+
+Sämtliche Aussagen der Testpersonen und Ergebnisse des Playtestings können unter folgendem Link angesehen werden:
+https://docs.google.com/spreadsheets/d/1kXPqphzmnG5195DDlOivgWjdf4xOO4wrbs8OSr79KxU/edit?usp=sharing
 
 ## Individueller Beitrag
 
