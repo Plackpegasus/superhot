@@ -24,11 +24,9 @@ Die Steuerungsmechaniken sind wie folgt:
 
 Innerhalb unserer Umsetzung wurden einige kostenlose und frei verwendbare 3D-Modelle von den Plattformen Sketchfab, Ultimaker Thingiverse und dem Unity Asset Store verwendet. Dazu gehörigen beispielsweise das Modell des Gegners, die Pistole des Spielers etc. Alle verwendeten Assets sind nachfolgend aufgeführt (letzter Aufruf aller Links: 19. Dezember 2023):
 
-– Gegner (Modell von @huge_man auf Sketchfab)
-https://sketchfab.com/3d-models/low-poly-base-mesh-530-tri-138ca18c246a4b13b3e108bd88df95a2
+- Gegner (Modell von @huge_man auf Sketchfab): https://sketchfab.com/3d-models/low-poly-base-mesh-530-tri-138ca18c246a4b13b3e108bd88df95a2
 
-– Pistole (Modell von @dog_g auf UltiMaker Thingiverse)
-https://www.thingiverse.com/thing:4572894
+- Pistole (Modell von @dog_g auf UltiMaker Thingiverse): https://www.thingiverse.com/thing:4572894
 
 ### Animation
 
@@ -88,6 +86,8 @@ Der Fragebogen umfasste folgende Fragen:
 ### Playtesting Ergebnis
 
 ... (Ergebnisse hier)
+
+![alt text](https://github.com/Plackpegasus/superhot/blob/main/Images/superhot_playtesting-01.png)
 
 Sämtliche Aussagen der Testpersonen und Ergebnisse des Playtestings können unter folgendem Link angesehen werden:
 https://docs.google.com/spreadsheets/d/1kXPqphzmnG5195DDlOivgWjdf4xOO4wrbs8OSr79KxU/edit?usp=sharing
