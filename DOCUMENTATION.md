@@ -13,12 +13,10 @@ Als Fans des Shooters haben Nico und ich uns entschieden, innerhalb des Moduls �
 Unsere Umsetzung von Superhot übernimmt die gängigsten Steuerelemente eines First-Person Shooters.
 Die Steuerungsmechaniken sind wie folgt:
 
-– Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.
-– Leertaste: Hüpfen
-– Linke Maustaste: Schuss mit Waffe
+– Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.  
+– Leertaste: Hüpfen  
+– Linke Maustaste: Schuss mit Waffe  
 – Taste «R»: Neustarten des Levels
-
-...
 
 ## 3rd Party Assets
 
@@ -36,8 +34,6 @@ https://www.thingiverse.com/thing:4572894
 
 Für die Gegner wurde eine kostenlose Animation im Loop verwendet, die von Adobe Mixamo stammt. Dabei handelt es sich um die «Shooting»-Animation, welche auf www.mixamo.com einsehbar ist (ein Adobe Account ist notwendig).
 
-...
-
 ## Musik und Sound Effects
 
 Unserer Adaption von Superhot verwendet zwei Audioquellen von externen Quellen:
@@ -46,27 +42,26 @@ Unserer Adaption von Superhot verwendet zwei Audioquellen von externen Quellen:
 
 – Sound «Pistolenschuss»: Hier wurde die Audiodatei «35 Gun,Hand,Foley Glock 10mm/Reloading» aus der BBC Sound Library.
 
-...
-
 ## Functional and Non-Functional Requirements
 
 ### Functional Requirements
 
 Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft
-      •     Basic-Playercontroller: Spieler kann Laufen und Hüpfen
-      •     Mind. ein Spiellevel
-      •     Mind. drei Gegner im Level zum Bekämpfen
-      •     Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann  
-      •     Mind. ein Sound-Effekt, der sinnvoll im Spiel eingesetzt wird
-      •     Spieler kann sterben
-      •     Spieler und Gegner sterben bei einmaligem Treffer/Schaden
-      •     Spieler kann das Level neu starten
+
+- Basic-Playercontroller: Spieler kann Laufen und Hüpfen
+- Mind. ein Spiellevel
+- Mind. drei Gegner im Level zum Bekämpfen
+- Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann
+- Mind. ein Sound-Effekt, der sinnvoll im Spiel eingesetzt wird
+- Spieler kann sterben
+- Spieler und Gegner sterben bei einmaligem Treffer/Schaden
+- Spieler kann das Level neu starten
 
 ### Non-Functional Requirements
 
-•     Die Waffe ist für den Spieler sichtbar
-      •     Das Projektil der Waffe ist für den Spieler sichtbar  
-      •     Ein Level muss Deckung für den Spieler bieten
+- Die Waffe ist für den Spieler sichtbar
+- Das Projektil der Waffe ist für den Spieler sichtbar
+- Ein Level muss Deckung für den Spieler bieten
 
 ## Playtesting
 
