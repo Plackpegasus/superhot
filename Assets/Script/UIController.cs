@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
+    public GameObject startScreen;
     public GameObject deathScreen;
 
     private float restartThreshhold = 1.5f;
@@ -13,12 +14,13 @@ public class UIController : MonoBehaviour
     private bool playerDead;
     private PlayerController playerController;
 
-    public bool isGamePaused { get; private set; } = false;
+    public bool isGamePaused { get; private set; } = true;
 
     // Start is called before the first frame update
     void Start()
     {
         deathScreen.SetActive(false);
+        startScreen.SetActive(true);
         activeScene = SceneManager.GetActiveScene();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
@@ -26,6 +28,12 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (startScreen.activeSelf && Input.anyKey)
+        {
+            startScreen.SetActive(false);
+            isGamePaused = false;
+        }
+
         playerDead = playerController.isPlayerDead;
 
         if (Input.GetKeyDown(KeyCode.R)) 
