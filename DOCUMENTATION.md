@@ -149,7 +149,11 @@ Zum Termind es Playtestings waren die Grundlagen von Superhot implementiert. Es 
 
 ### Playtesting-Setup
 
-Für das Playtesting haben wir ein frühes Playtesting-Level konzipiert, dass den Testpersonen gezeigt wurde. In diesem Playtesting-Level war es den Spielern möglich, alle implementierten Features zu nutzen. Es fehlten jedoch die Particle Effects bei einem getroffenen Gegnerund der Raycast der Gegner, sowie einige 3D-Modelle. Während und im Anschluss des Testings wurde, die Testpersonen mit einem vorher definierten Fragebogen abgefragt. Alle Antworten wurden im Anschluss in einem Google Form gesammelt.
+Für das Playtesting haben wir ein frühes Playtesting-Level konzipiert, dass den Testpersonen gezeigt wurde. In diesem Playtesting-Level war es den Spielern möglich, alle implementierten Features zu nutzen. Es fehlten jedoch die Particle Effects bei einem getroffenen Gegnerund der Raycast der Gegner, sowie einige 3D-Modelle. So sah das Playtesting-Level am 6. Dezember aus:
+
+![alt text](Images/superhot_playtesting-03.png)
+
+Während und im Anschluss des Testings wurde, die Testpersonen mit einem vorher definierten Fragebogen abgefragt. Alle Antworten wurden im Anschluss in einem Google Form gesammelt.
 
 Der Fragebogen umfasste folgende Fragen:
 
