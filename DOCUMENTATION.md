@@ -170,6 +170,7 @@ Sämtliche Aussagen der Testpersonen und Ergebnisse des Playtestings können unt
 
 ## Individueller Beitrag
 
-### Analyse: Zeitachse
+### Elia Rohrbach
 
-### Analyse: Verwendung von Raycast für schiessende Enemies
+### Nico Schneider
+Ich habe mich vor allem mit dem Code für das Projekt auseinandergesetzt. Der Bullettime-Effekt, der Raycast der Gegner als Zielhilfe, die BulletSpawner Scripte, sowie die Manager- und Behaviour-Scripte habe ich entwickelt. Auch die Verwendung von Scriptable Objects habe ich in erwägung gezogen und bin aber zum Schluss gekommen, dass in unserer Spielumgebung nicht genügend Daten zwischen verschiedenen Gameobjects geteilt werden, um einen Gewinn aus den SO's zu erhalten. Mit Elia konnten wir das Playtesting frühzeitig einrichten und somit wertvolles Feedback in unser Projekt einfliessen lassen. Bezüglich Assets habe ich keine Recherchen angestellt. Die einzige Animation die von mir erstellt wurde, ist der Rückstoss der Waffe, welche ich direkt in Unity animierte.
