@@ -1,10 +1,10 @@
-# Superhot – GAMEDEV HS23
+# SuperHot – GAMEDEV HS23
 
-Dies ist die Dokumentation des Projekts «Superhot», eine Abgabe innerhalb des Moduls «Game Development» von Nico Schneider und Elia Rohrbach.
+Dies ist die Dokumentation des Projekts «SuperHot», eine Abgabe innerhalb des Moduls «Game Development» von Nico Schneider und Elia Rohrbach.
 
 ## Grundidee
 
-Unsere Umsetzung des Spiels «Superhot» ist eine Nachstellung des gleichnamigen Shooters vom Entwickler «SUPERHOT Team», welches im Februar 2016 erstmalig für Windows, Linux und macOS erschienen ist. Die Grundmechanik des First-Person Shooters basiert auf den klassischen Mechaniken eines Shooters, wobei der Spieler innerhalb eines Levels mehrere Gegner mit verschiedenen Waffen bekämpft. Jedoch bewegt sich die Zeit innerhalb des Spiels nur, wenn sich der Spieler bewegt. Das ermöglicht dem Spieler, seine Situation in Slow-Motion zu analysieren und entsprechend zu reagieren, was eine taktische Komponente ins Spiel einfliessen lässt.
+Unsere Umsetzung des Spiels «SuperHot» ist eine Nachstellung des gleichnamigen Shooters vom Entwickler «SUPERHOT Team», welches im Februar 2016 erstmalig für Windows, Linux und macOS erschienen ist. Die Grundmechanik des First-Person Shooters basiert auf den klassischen Mechaniken eines Shooters, wobei der Spieler innerhalb eines Levels mehrere Gegner mit verschiedenen Waffen bekämpft. Jedoch bewegt sich die Zeit innerhalb des Spiels nur, wenn sich der Spieler bewegt. Das ermöglicht dem Spieler, seine Situation in Slow-Motion zu analysieren und entsprechend zu reagieren, was eine taktische Komponente ins Spiel einfliessen lässt.
 
 Als Fans des Shooters haben wir uns entschieden, innerhalb des Moduls «Game Development» die Mechanik und visuellen Elemente von Superhot nachzubauen. Daraus entstand unsere Version des Shooters, wobei wie beim Originalspiel auch die Gameengine Unity verwendet wurde.
 
@@ -14,7 +14,7 @@ Unsere Umsetzung von Superhot übernimmt die gängigsten Steuerelemente eines Fi
 Die Steuerungsmechaniken sind wie folgt:
 
 - Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.
-- Leertaste: Hüpfen
+- Leertaste: Springen
 - Linke Maustaste: Schuss mit Waffe
 - Taste «R»: Neustarten des Levels
 
@@ -136,7 +136,10 @@ Das Verhalten einer Kugel ist sehr simpel. Sie wird mit einem Prefab instanziert
 Innerhalb unserer Umsetzung wurden einige kostenlose und frei verwendbare 3D-Modelle von den Plattformen Sketchfab, Ultimaker Thingiverse und dem Unity Asset Store verwendet. Dazu gehörigen beispielsweise das Modell des Gegners, die Pistole des Spielers etc. Alle verwendeten Assets sind nachfolgend aufgeführt (letzter Aufruf aller Links: 19. Dezember 2023):
 
 - Gegner 3D-Modell: Modell von @huge_man auf [Sketchfab](https://sketchfab.com/3d-models/low-poly-base-mesh-530-tri-138ca18c246a4b13b3e108bd88df95a2)
-- Pistole 3D-Modell: Modell von @dog_g auf UltiMaker [Thingiverse](https://www.thingiverse.com/thing:4572894)
+- Pistole 3D-Modell: Modell von @dog_g auf [UltiMaker Thingiverse](https://www.thingiverse.com/thing:4572894)
+- Diverse Props: Modelle von @MentalDreams auf dem [Unity Asset Store](https://assetstore.unity.com/packages/3d/props/industrial/prop-pack-30963)
+- Crate and Barrels: Modelle von @Kobra Game Studios auf dem [Unity Asset Store](https://assetstore.unity.com/packages/3d/props/industrial/crate-and-barrels-73101)
+- Low Poly Barriers Pack: Modelle von @Schatro Dev Assets auf dem [Unity Asset Store](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-barriers-pack-free-201810)
 
 ### Animation
 
@@ -154,7 +157,7 @@ Unserer Adaption von Superhot verwendet zwei Audioquellen von externen Quellen:
 
 Das Playtesting haben wir während der Entwicklunsgzeit am Mittwoch, 6. Dezember 2023 an der HSLU durchgeführt. Getestet wurde mit ingesamt sieben Personen, mit unterschiedlichen Gaming-Vorerfahrungen und Geschlechtern. Uns war es wichtig, dass Playtesting mit genug Abstand zum Abgabetermin umzusetzen, um bei Erkenntnissen entsprechend reagieren zu können.
 
-Zum Termind es Playtestings waren die Grundlagen von Superhot implementiert. Es fehlten noch sämtliche Sounds und Animationen.
+Zum Termin des Playtestings waren die Grundlagen von Superhot implementiert. Es fehlten noch sämtliche Sounds und Animationen.
 
 ### Playtesting-Setup
 
@@ -193,7 +196,7 @@ Noch zu verbessernde Elemente:
 
 - Die eigene Hitbox des Spielers schien noch unberechenbar: Die Testpersonen hatten Mühe einzuschätzen, wann sie getroffen werden können und wann nicht und haben dies auch so geäussert.
 - Es war schwierig erkennbar, wann ein Gegner getroffen wurde: In der Playtesting-Version verschwanden die Gegner nach einem Treffer einfach, ohne Effekte oder Partikel. Beinahe alle Testpersonen fanden dies etwas verwirrend. Insbesondere dann, wenn sie auf einen Gegner einen Schuss abgegeben haben und dieser ausserhalb des Sichtfelds gestorben/verschwunden ist.
-  – Alle Spieler konnten nicht nachvollziehen, wann er oder sie einen Schuss abgegen hat. Da der Rückstoss der Pistole noch nicht implementiert war, fehlte hier eine eindeutige Indikation, dass ein Schuss abgefeuert wurde. Dazu kam auch, dass einige Spieler nicht verstanden, wann sie erneut wieder einen Schuss abgeben können (Cooldown). Eine Spielerin kam sogar auf den Gedanken, dass sie erst dann wieder Schiessen kann, wenn der vorhere abgegebene Schuss sein Ziel erreicht hat. Hier sahen wir also noch viel Verbesserungspotenzial.
+- Alle Spieler konnten nicht nachvollziehen, wann er oder sie einen Schuss abgegen hat. Da der Rückstoss der Pistole noch nicht implementiert war, fehlte hier eine eindeutige Indikation, dass ein Schuss abgefeuert wurde. Dazu kam auch, dass einige Spieler nicht verstanden, wann sie erneut wieder einen Schuss abgeben können (Cooldown). Eine Spielerin kam sogar auf den Gedanken, dass sie erst dann wieder Schiessen kann, wenn der vorhere abgegebene Schuss sein Ziel erreicht hat. Hier sahen wir also noch viel Verbesserungspotenzial.
 
 Ingesamt waren wir mit dem Playtest sehr zufrieden. Inbesondere das bereits gute Ergebnis in den 1 - 10 Bewertungen hat uns gezeigt, dass wir auf dem richtigen Weg sind.
 
