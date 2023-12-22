@@ -20,17 +20,17 @@ Die Steuerungsmechaniken sind wie folgt:
 - Linke Maustaste: Schuss mit Waffe
 - Taste «R»: Neustarten des Levels
 
-## Functional and Non-Functional Requirements and Risks
+## Functional Requirements, Non-Functional Requirements and Risks
 
 ### Functional Requirements
 
 Folgende Requirements wurden vor der Arbeit am Projekt ausgearbeitet. Die Estimates befinden sich jeweils in der Klammer.
 
 - Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft (large)
-- Basic-Playercontroller: Spieler kann Laufen und Hüpfen (small)
+- Basic-Playercontroller: Spieler kann Laufen und Springen (small)
 - Mind. ein Spiellevel (medium)
 - Mind. drei Gegner im Level zum Bekämpfen (large – inkl. Modell, Animation, Particle Effects)
-- Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann (small)
+- Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann (medium)
 - Mind. ein Sound-Effekt, der sinnvoll im Spiel eingesetzt wird (small)
 - Spieler kann sterben (medium)
 - Spieler und Gegner sterben bei einmaligem Treffer/Schaden (small)
