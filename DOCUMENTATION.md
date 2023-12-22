@@ -18,29 +18,38 @@ Die Steuerungsmechaniken sind wie folgt:
 - Linke Maustaste: Schuss mit Waffe
 - Taste «R»: Neustarten des Levels
 
-## Functional and Non-Functional Requirements
+## Functional and Non-Functional Requirements and Risks
 
 ### Functional Requirements
 
-- Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft
-- Basic-Playercontroller: Spieler kann Laufen und Hüpfen
-- Mind. ein Spiellevel
-- Mind. drei Gegner im Level zum Bekämpfen
-- Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann
-- Mind. ein Sound-Effekt, der sinnvoll im Spiel eingesetzt wird
-- Spieler kann sterben
-- Spieler und Gegner sterben bei einmaligem Treffer/Schaden
-- Spieler kann das Level neu starten
+Folgende Requirements wurden vor der Arbeit am Projekt ausgearbeitet. Die Estimates befinden sich jeweils in der Klammer.
+
+- Zeit der Szene und der Gegner wird mit Bewegungen des Spielers verknüpft (large)
+- Basic-Playercontroller: Spieler kann Laufen und Hüpfen (small)
+- Mind. ein Spiellevel (medium)
+- Mind. drei Gegner im Level zum Bekämpfen (large – inkl. Modell, Animation, Particle Effects)
+- Mind. ein Waffentyp mit Projektil (Bsp. Pistole), der vom Spieler eingesetzt werden kann (small)
+- Mind. ein Sound-Effekt, der sinnvoll im Spiel eingesetzt wird (small)
+- Spieler kann sterben (medium)
+- Spieler und Gegner sterben bei einmaligem Treffer/Schaden (small)
+- Spieler kann das Level neu starten (small)
 
 ### Non-Functional Requirements
 
-- Die Waffe ist für den Spieler sichtbar
-- Das Projektil der Waffe ist für den Spieler sichtbar
-- Ein Level muss Deckung für den Spieler bieten
+- Die Waffe ist für den Spieler sichtbar (small)
+- Das Projektil der Waffe ist für den Spieler sichtbar (small)
+- Ein Level muss Deckung für den Spieler bieten (small)
+
+### Risks
+
+- Die Implementation einer Zeit-Konstante (Slow-Motion) ist schwieriger als angenommen und wir scheitern möglicherweise an einer sauberen und fliessenden Umsetzung.
+- Die Intelligenz bzw. das Verhalten der Gegner fällt zu primitiv aus.
+- Der vorgenommene Umfang des Spiels ist zu gross und passt nicht in den zeitlichen Umfang des Projekts.
+- Jemand aus der Gruppe fällt krankheitsbedingt für längere Zeit aus.
 
 ## Code
 
-### Bullet time (Slow-Mo) Effekt
+### Bullet-Time (Slow-Motion) Effekt
 
 Der Bullettime Effekt wird über den Input des Spielers gesteuert. Sobald ein Bewegungsinput von der X- oder Y-Achse kommt, wird die Timescale des Spiels zwischen den Werten 1f und 0.03f, mit einer geschwindigkeit von 0.5f bzw. 0.05f interpoliert.
 
@@ -151,7 +160,7 @@ Zum Termind es Playtestings waren die Grundlagen von Superhot implementiert. Es 
 
 Für das Playtesting haben wir ein frühes Playtesting-Level konzipiert, dass den Testpersonen gezeigt wurde. In diesem Playtesting-Level war es den Spielern möglich, alle implementierten Features zu nutzen. Es fehlten jedoch die Particle Effects bei einem getroffenen Gegnerund der Raycast der Gegner, sowie einige 3D-Modelle. So sah das Playtesting-Level am 6. Dezember aus:
 
-![alt text](Images/superhot_playtesting-03.png)
+![alt Das Playtesting-Level unseres Spiels in einer frühen Version](Images/superhot_playtesting-03.png)
 
 Während und im Anschluss des Testings wurde, die Testpersonen mit einem vorher definierten Fragebogen abgefragt. Alle Antworten wurden im Anschluss in einem Google Form gesammelt.
 
