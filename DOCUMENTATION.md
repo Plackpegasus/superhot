@@ -8,11 +8,11 @@ Dies ist die Dokumentation des Projekts «SuperHot», eine Abgabe innerhalb des 
 
 Unsere Umsetzung des Spiels «SuperHot» ist eine Nachstellung des gleichnamigen Shooters vom Entwickler «SUPERHOT Team», welches im Februar 2016 erstmalig für Windows, Linux und macOS erschienen ist. Die Grundmechanik des First-Person Shooters basiert auf den klassischen Mechaniken eines Shooters, wobei der Spieler innerhalb eines Levels mehrere Gegner mit verschiedenen Waffen bekämpft. Jedoch bewegt sich die Zeit innerhalb des Spiels nur, wenn sich der Spieler bewegt. Das ermöglicht dem Spieler, seine Situation in Slow-Motion zu analysieren und entsprechend zu reagieren, was eine taktische Komponente ins Spiel einfliessen lässt.
 
-Als Fans des Shooters haben wir uns entschieden, innerhalb des Moduls «Game Development» die Mechanik und visuellen Elemente von Superhot nachzubauen. Daraus entstand unsere Version des Shooters, wobei wie beim Originalspiel auch die Gameengine Unity verwendet wurde.
+Als Fans des Shooters haben wir uns entschieden, innerhalb des Moduls Game Development die Mechanik und visuellen Elemente von SuperHot nachzubauen. Daraus entstand unsere Version des Shooters, wobei wie beim Originalspiel auch die Gameengine Unity verwendet wurde.
 
 ### Anleitung
 
-Unsere Umsetzung von Superhot übernimmt die gängigsten Steuerelemente eines First-Person Shooters.
+Unsere Umsetzung von SuperHot übernimmt die gängigsten Steuerelemente eines First-Person Shooters.
 Die Steuerungsmechaniken sind wie folgt:
 
 - Tasten «WASD»: Bewegung des Spielers nach vorne, links, hinten und rechts.
@@ -156,7 +156,7 @@ Für die Gegner wurde eine kostenlose Animation im Loop verwendet, die von Adobe
 
 ### Musik und Sound Effects
 
-Unserer Adaption von Superhot verwendet zwei Audioquellen von externen Quellen:
+Unserer Adaption von SuperHot verwendet zwei Audioquellen von externen Quellen:
 
 - Hintergrundmusik: Danger Snow – Dan Henig (Zugang nur über YouTube-Account in die Audio-Mediathek möglich). Verwendung unter der YouTube-Mediathek Lizenz. Eine allenfalls kommerzielle Verwendung wäre nicht zulässig.
 
