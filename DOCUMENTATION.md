@@ -181,14 +181,11 @@ Der Fragebogen umfasste folgende Fragen:
 
 Unsere sieben Testpersonen hatten diverse Vorerfahrung mit Games, wie die folgende Grafik visualisiert. Die grösste Mehrheit spielt «selten» oder «manchmal» Games, so kam es auch vor, dass einzelne Testpersonen die Originalvorlage «Superhot» auch bereits kannten.
 
-![alt text](Images/superhot_playtesting-01.png)
-
-Sämtliche Aussagen der Testpersonen und Ergebnisse des Playtestings können unter folgendem Link angesehen werden:
-[Google Docs Spreadsheet](https://docs.google.com/spreadsheets/d/1kXPqphzmnG5195DDlOivgWjdf4xOO4wrbs8OSr79KxU/edit?usp=sharing)
+![alt Umfrage bezüglich Vorerfahrung mit Games](Images/superhot_playtesting-01.png)
 
 Generelle Erkenntnisse:
 
-- Das Spielkonzept wurde von allen Personen innert wenig Einfühlszeit verstanden. Je nach Vorerfahrung an Games wurde die Mechanik mit der Zeitachse schneller bzw. etwas langsamer erkannt und angewendet.
+- Das Spielkonzept wurde von allen Personen innert wenig Einfühlszeit verstanden. Je nach Vorerfahrung an Games wurde die Mechanik mit der Zeitachse schneller bzw. etwas langsamer erkannt und angewendet. Jedoch haben alle Spieler das Spielkonzept verstanden und konnten das Level wie gedacht absolvieren.
 - Alle Spieler wünschten sich mehr Inhalt im Spiel. Insbesondere wurden mehr Levels oder ein «Rekordzeit»-Feature erwähnt, wo der Spieler sich selbst durch neue Rekordzeiten herausfordern kann. Ausser dem einzigen Playtest-Level konnten wir im Testing nicht mehr Inhalt bieten, insofern waren diese Äusserungen verständlich.
 - Manche Spieler wünschten sich eine Möglichkeit, zu springen (Jump). Lustigerweise war dies bereits implementiert, nur drückten manche erst gar nicht auf die Leertaste und probierten auch nicht andere Tasten aus. Erst als wir sie darauf hingewiesen haben, haben sie danach den Jump verwendet.
 
@@ -200,7 +197,10 @@ Noch zu verbessernde Elemente:
 
 Ingesamt waren wir mit dem Playtest sehr zufrieden. Inbesondere das bereits gute Ergebnis in den 1 - 10 Bewertungen hat uns gezeigt, dass wir auf dem richtigen Weg sind.
 
-![alt text](Images/superhot_playtesting-02.png)
+![alt Umfrage bezüglich Spielspass und Einfachheit unseres Playtesting-Levels](Images/superhot_playtesting-02.png)
+
+Sämtliche Aussagen der Testpersonen und Ergebnisse des Playtestings können unter folgendem Link angesehen werden:
+[Google Docs Spreadsheet](https://docs.google.com/spreadsheets/d/1kXPqphzmnG5195DDlOivgWjdf4xOO4wrbs8OSr79KxU/edit?usp=sharing)
 
 ## Individueller Beitrag
 
