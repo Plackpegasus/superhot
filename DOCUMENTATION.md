@@ -49,6 +49,13 @@ Folgende Requirements wurden vor der Arbeit am Projekt ausgearbeitet. Die Estima
 - Der vorgenommene Umfang des Spiels ist zu gross und passt nicht in den zeitlichen Umfang des Projekts.
 - Jemand aus der Gruppe fällt krankheitsbedingt für längere Zeit aus.
 
+#### Evaluation der Risks
+
+- Die Implementation der Slow Motion war für uns gut umsetzbar und hat bereits im frühen Entwicklungsstadium funktioniert.
+- Wegen der Deadline stehen unsere Gegner aktuell still. Durch den Raycast und die Rotation auf die Kamera konnten wir jedoch eine gewisse Intelligenz simulieren.
+- Der Umfang war im Rahmen dieses Projekts nicht zu gross und hat zeitlich gereicht.
+- Glücklicherweise ist niemand von uns für längere Zeit ausgefallen.
+
 ## Code
 
 ### Bullet-Time (Slow-Motion) Effekt
