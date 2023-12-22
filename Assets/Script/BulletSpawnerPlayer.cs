@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class BulletSpawnerPlayer : BulletSpawner
 {
     public Image crosshair;
-    public AudioSource gunSound;
     private float targetCrosshairRotation = -90f; // turn crosshair clockwise
     private float angleVelocity;
 
@@ -15,16 +14,16 @@ public class BulletSpawnerPlayer : BulletSpawner
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
-        gunSound.pitch = Time.timeScale;
-
+        base.Update();
+        
         if (Input.GetMouseButtonDown(0) && Time.time > passedCooldownTime)
         {
             Vector3 bulletSpawnPosition = bulletSpawnPoint.position;
             bulletSpawnPosition += bulletSpawnPoint.forward; // offset bullet from camera, so playermodel is not hit
             spawnBullet(bulletSpawnPosition, bulletSpawnPoint.rotation);
-            gunSound.Play();
+            //gunSound.Play();
         }
 
         if (Time.time < passedCooldownTime)

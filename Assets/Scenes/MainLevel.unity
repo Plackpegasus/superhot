@@ -888,9 +888,9 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 963194228}
   bulletPrefab: {fileID: 500277872320870544, guid: 4e5789b351e414d7cadd85dbbc64cd5e, type: 3}
   muzzleFlash: {fileID: 1556056662}
+  gunSound: {fileID: 263488030}
   gunCooldown: 1
   crosshair: {fileID: 51183590}
-  gunSound: {fileID: 263488030}
 --- !u!114 &263488029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,10 +1754,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5732979185805137277, guid: 5dba420728a817a4083a5d4d2228a40f, type: 3}
-      propertyPath: deathParticles
-      value: 
-      objectReference: {fileID: 892696601220794196, guid: 1d329aecd4aa34b42b5f1b5a46fe0ad8, type: 3}
     - target: {fileID: 7405229365419864894, guid: 5dba420728a817a4083a5d4d2228a40f, type: 3}
       propertyPath: m_Name
       value: Enemy (1)

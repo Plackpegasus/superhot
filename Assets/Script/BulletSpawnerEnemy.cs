@@ -13,8 +13,10 @@ public class BulletSpawnerEnemy : BulletSpawner
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
+        base.Update();
+
         Vector3 rayOrigin = bulletSpawnPoint.position;
         Vector3 rayDirection = player.transform.position - rayOrigin;
         RaycastHit hit;
@@ -26,7 +28,7 @@ public class BulletSpawnerEnemy : BulletSpawner
             float rayHitAngle = 180 - Vector3.Angle(rayDirection, hit.normal);
             Quaternion parentRotation = GetComponentInParent<Transform>().rotation;
 
-            // hit.normal is 90° to surface, if enemy position too high bullet angle is falsified because of capsule geometry
+            // hit.normal is 90ï¿½ to surface, if enemy position too high bullet angle is falsified because of capsule geometry
             Quaternion bulletSpawnRotation = Quaternion.Euler(rayHitAngle, parentRotation.eulerAngles.y, parentRotation.eulerAngles.z);
             spawnBullet(bulletSpawnPoint.position, bulletSpawnRotation);
 
