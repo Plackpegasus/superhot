@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BulletSpawnerEnemy : BulletSpawner
@@ -25,10 +26,11 @@ public class BulletSpawnerEnemy : BulletSpawner
 
         if (hit.collider.tag == "Player")
         {
-            float rayHitAngle = 180 - Vector3.Angle(rayDirection, hit.normal);
+            float rayHitAngle = Vector3.Angle(rayDirection, hit.normal);
+            rayHitAngle = hit.transform.position.y < transform.position.y ? 180 - rayHitAngle : 180 + rayHitAngle;
             Quaternion parentRotation = GetComponentInParent<Transform>().rotation;
 
-            // hit.normal is 90� to surface, if enemy position too high bullet angle is falsified because of capsule geometry
+            // hit.normal is 90� to surface, if enemy position too high/too low bullet angle is falsified because of capsule geometry
             Quaternion bulletSpawnRotation = Quaternion.Euler(rayHitAngle, parentRotation.eulerAngles.y, parentRotation.eulerAngles.z);
             spawnBullet(bulletSpawnPoint.position, bulletSpawnRotation);
 
